@@ -1,0 +1,29 @@
+.wrapper {
+  margin-bottom: 1rem;
+}
+
+.label {
+  display: grid;
+  color: #f1f1f1;
+  gap: 10px;
+  font-size: 1rem;
+  line-height: 1.4;
+  padding-bottom: 0.1rem;
+}
+
+.textArea {
+  border: 0.5px solid #464646;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.8rem;
+  background: transparent;
+  transition: 0.3s;
+}
+.textArea:focus,
+.textArea:hover {
+  outline: none;
+  border-color: #f1f1f1;
+  background: #f1f1f1;
+  box-shadow: 0 0 0 2px #f1f1f1;
+}

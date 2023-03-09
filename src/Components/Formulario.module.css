@@ -1,0 +1,19 @@
+.form {
+  margin-top: 20px;
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+}
+.name {
+  grid-column: span 2;
+}
+.message {
+  grid-column: span 2;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+  grid-column: span 2;
+}

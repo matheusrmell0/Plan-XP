@@ -1,0 +1,43 @@
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 120px;
+}
+
+.formContainer > h1 {
+  margin-bottom: 35px;
+}
+
+.formContainer span {
+  top: -45px;
+}
+
+.redes {
+  max-width: 20ch;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.redes h1 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.content {
+  margin-bottom: 50px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+.content p,
+.content ul {
+  margin: 0;
+}
+
+.redes > div {
+  display: grid;
+  align-items: center;
+  height: 64px;
+}
