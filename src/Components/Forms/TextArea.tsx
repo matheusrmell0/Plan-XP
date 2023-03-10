@@ -2,25 +2,20 @@ import { ChangeEventHandler } from 'react';
 import styles from './TextArea.module.css';
 
 const TextArea = ({
+  placeholder,
   label,
   onChange,
   value,
   name,
   cols,
   rows,
-}: {
-  cols?: number;
-  rows: number;
-  label: string;
-  value?: string;
-  name: string;
-  onChange?: ChangeEventHandler<HTMLTextAreaElement>;
-}) => {
+}: TextArea) => {
   return (
     <div className={styles.wrapper}>
       <label className={styles.label}>
         {label}
         <textarea
+          placeholder={placeholder}
           className={`${styles.textArea}`}
           onChange={onChange}
           value={value}

@@ -34,7 +34,8 @@ const Contato = () => {
           </p>
           <Redes />
         </div>
-        <div className={`${styles.redes}`}>
+        
+        <div className={`${styles.redes} ${styles.enderecoRS}`}>
           <h1>/RS</h1>
           <ul className="page-desc">
             <li>Rua Onze de Julho, 243</li>
@@ -45,7 +46,7 @@ const Contato = () => {
           <Button>ver no google maps</Button>
         </div>
 
-        <div className={`${styles.redes}`}>
+        <div className={`${styles.redes} ${styles.enderecoSP}`}>
           <h1>/SP</h1>
           <ul className="page-desc">
             <li>Rua Ibijaú, 355/Sala 1309</li>

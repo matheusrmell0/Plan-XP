@@ -2,16 +2,19 @@ import { MouseEventHandler } from 'react';
 import styles from './Button.module.css';
 
 const Button = ({
+  disabled,
   children,
   onClick,
   ...props
-}: {
-  children: string;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
-}) => {
+}: Button) => {
   return (
     <>
-      <button onClick={onClick} {...props} className={styles.button}>
+      <button
+        disabled={disabled}
+        onClick={onClick}
+        {...props}
+        className={styles.button}
+      >
         {children} ↘
       </button>
     </>

@@ -1,4 +1,4 @@
-import { ChangeEventHandler } from 'react';
+import { ChangeEventHandler, FocusEventHandler } from 'react';
 import styles from './Input.module.css';
 
 const Input = ({
@@ -10,16 +10,7 @@ const Input = ({
   name,
   value,
   error,
-}: {
-  onChange?: ChangeEventHandler<HTMLInputElement>;
-  onBlur?: ChangeEventHandler<HTMLInputElement>;
-  placeholder?: string;
-  type: string;
-  label: string;
-  name: string;
-  value?: string;
-  error?: string;
-}) => {
+}: Input) => {
   return (
     <div className={styles.wrapper}>
       <label className={styles.label} htmlFor={name}>
