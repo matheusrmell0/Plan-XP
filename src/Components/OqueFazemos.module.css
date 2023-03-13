@@ -1,0 +1,164 @@
+.home {
+  display: grid;
+  gap: 115px;
+  grid-template-columns: 1fr 1fr;
+}
+.content {
+  display: flex;
+  gap: 20px;
+}
+.intro {
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+}
+.desktopBg {
+  min-width: 190px;
+  height: 190px;
+  background-image: url('../Assets/gamer.jpg');
+  background-size: cover;
+}
+
+.tabletBg {
+  min-width: 190px;
+  height: 190px;
+  background-image: url('../Assets/tablets.jpg');
+  background-size: cover;
+}
+
+.mobileBg {
+  min-width: 190px;
+  height: 190px;
+  background-image: url('../Assets/gamerMobile.jpg');
+  background-size: cover;
+}
+
+.descImg {
+  margin-top: 30px;
+  font-size: 0.813rem;
+  line-height: 1.625rem;
+  min-width: 190px;
+  font-weight: 300;
+}
+
+.controleBg {
+  display: flex;
+  min-width: 215px;
+  flex-direction: column;
+  justify-content: end;
+}
+.controleBg > p {
+  font-size: 1.5rem;
+  line-height: 2.188rem;
+  font-weight: 300;
+}
+.contato {
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #939598;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin-top: 25px;
+  width: 20ch;
+}
+
+.intro > h1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Responsivo */
+@media (max-width: 1570px) {
+  .content {
+    border-top: 1px solid #a3a3a3;
+    padding-top: 50px;
+  }
+  .home {
+    gap: 50px;
+    grid-template-columns: 1fr;
+  }
+  .desktopBg {
+    min-width: fit-content;
+  }
+  .tabletBg {
+    min-width: fit-content;
+  }
+  .mobileBg {
+    min-width: fit-content;
+  }
+  .controleBg {
+    min-width: fit-content;
+    font-size: 0.875rem;
+  }
+  .controleBg > p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    max-width: 190px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .home {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1065px) {
+  .content {
+    padding-top: 40px;
+  }
+  .home {
+    gap: 40px;
+    grid-template-columns: 1fr;
+  }
+  .descImg {
+    margin-top: 30px;
+    font-size: 0.813rem;
+    line-height: 1.575rem;
+  }
+}
+
+@media (max-width: 1170px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+  .controleBg {
+    font-size: 0.775rem;
+  }
+  .controleBg > p {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    min-width: auto;
+  }
+  .contato {
+    margin-top: 20px;
+    width: auto;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .controleBg > p {
+    margin-top: 20px;
+    min-width: 30ch;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .controleBg > p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    min-width: 100%;
+  }
+}

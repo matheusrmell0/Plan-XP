@@ -1,0 +1,156 @@
+/* * {
+  border: 1px solid gray;
+} */
+
+/* CSS Reset */
+:root {
+  --color1: #a3a3a3;
+  --color2: #f1f1f1;
+  --color3: #292929
+}
+
+body {
+  --type-first: 'Montserrat', monospace;
+  --type-second: Arial, Helvetica, sans-serif;
+  font-family: var(--type-first);
+  background-color: #1e1e1e;
+  color: var(--color1);
+  margin: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+  color: var(--color2);
+}
+img {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Houver para ativo */
+.active {
+  color: var(--color1);
+}
+
+/* Grid template*/
+.structure {
+  display: flex;
+}
+.AppBody {
+  margin: 60px 20px 60px 90px;
+  display: grid;
+  align-items: center;
+}
+/* */
+
+/* Animacoes Gerais */
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-25px);
+  animation: animeLeft 0.3s forwards;
+}
+@keyframes animeLeft {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
+
+/* Classes gerais */
+
+strong {
+  color: var(--color2);
+}
+
+.page-title {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: white;
+  font-weight: 400;
+  font-family: 'Montserrat';
+}
+.sub-title {
+  margin-top: 30px;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+.title {
+  font-size: 2.688rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.page {
+  left: -8px;
+  top: -60px;
+  position: absolute;
+  font-size: 116px;
+  text-transform: uppercase;
+  color: var(--color3);
+  font-weight: 700;
+  z-index: -1;
+}
+
+.desc-title {
+  margin-top: 30px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.page-desc {
+  margin-top: 30px;
+  font-size: 0.813rem;
+  line-height: 1.625rem;
+  color: white;
+  font-weight: 400;
+}
+
+/* Responsivo  */
+@media (max-width: 1255px) {
+  .structure {
+    display: flex;
+    align-items: start;
+  }
+}
+@media (max-width: 1550px) {
+  .AppBody {
+    margin: 60px 50px 60px 60px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .AppBody {
+    margin: 100px 50px 60px 60px;
+  }
+}
+
+@media (max-width: 1235px){
+  .structure {
+    display: grid;
+  }
+  .AppBody {
+    margin: 80px 45px 80px 45px;
+  }
+}
+
+@media (max-width: 540px){
+  .AppBody {
+    margin: 80px 30px 30px 30px;
+  }
+}

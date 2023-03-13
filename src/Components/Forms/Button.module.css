@@ -1,0 +1,29 @@
+.button {
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+  transition: 0.2s;
+  margin: 0;
+  padding: 0.05rem 0.2rem;
+  text-align: left;
+  background: transparent;
+  font-size: 0.8rem;
+  width: fit-content;
+  text-transform: uppercase;
+  color: #939598;
+  font-weight: 400;
+  font-family: 'Montserrat';
+}
+
+.button:hover,
+.button:focus {
+  outline: none;
+  background: #a9a9a9;
+  color: #1e1e1e;
+  box-shadow: 0 0 0 2px #a3a3a3, 0 0 0 3px #f1f1f1;
+}
+.button:disabled {
+  cursor: wait;
+  opacity: 0.5rem;
+}
+
