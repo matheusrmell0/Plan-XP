@@ -134,9 +134,23 @@ strong {
   }
 }
 
-
 @media (max-width: 1170px) {
   .AppBody {
     margin: 60px 50px 60px 60px;
+  }
+}
+
+@media (max-width: 1020px){
+  .structure {
+    display: grid;
+  }
+  .AppBody {
+    margin: 80px 45px 45px 45px;
+  }
+}
+
+@media (max-width: 540px){
+  .AppBody {
+    margin: 80px 30px 30px 30px;
   }
 }

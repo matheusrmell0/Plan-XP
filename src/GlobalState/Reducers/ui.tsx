@@ -1,22 +1,26 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { AppDispatch } from '../configureStore';
 
 // Reducer para controle global do estado do modal para mobile
 const slice = createSlice({
   name: 'modal',
   initialState: {
-    modal: false,
+    mobile: null,
   },
   reducers: {
-    openModal(state) {
-      state.modal = true;
-    },
-    closeModal(state) {
-      state.modal = false;
+    changeModal(state, action) {
+      state.mobile = action.payload;
     },
   },
 });
 
 // Ações do reducer
-export const { openModal, closeModal } = slice.actions;
+const { changeModal } = slice.actions;
 
-export default slice.reducer
+// Funcao para o menu mobile em estado global
+export const changeMatch = (media: number) => (dispatch: AppDispatch) => {
+  const { matches } = window.matchMedia(`(max-width: ${media}rem)`);
+  dispatch(changeModal(matches));
+};
+
+export default slice.reducer;

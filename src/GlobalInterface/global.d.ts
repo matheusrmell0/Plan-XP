@@ -33,9 +33,13 @@ type FormField = [
   { id: 'mensagem' },
 ];
 
+interface Mobile {
+  ui: {mobile: boolean | null}
+}
+
 interface FormTypes {
   email: {
-    regex: RegExp;
+    regex: RegExp | string; 
     message: string;
   };
   number: {
@@ -45,13 +49,13 @@ interface FormTypes {
 }
 
 interface Input {
-  onChange?: ChangeEventHandler<HTMLInputElement> | undefined;
-  onBlur?: FocusEventHandler<HTMLInputElement> | undefined;
-  type: string | undefined;
-  placeholder?: string | undefined;
-  label: string | undefined;
-  name: string | undefined;
-  value?: string | undefined;
+  onChange?: ChangeEventHandler<HTMLInputElement> | any;
+  onBlur?: FocusEventHandler<HTMLInputElement> | any;
+  type: string | any;
+  placeholder?: string | any;
+  label: string | any;
+  name: string | any;
+  value?: string | any;
   error?: string | undefined;
 }
 

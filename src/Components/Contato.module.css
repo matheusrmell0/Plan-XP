@@ -87,7 +87,7 @@
     grid-column: span 2;
     display: grid;
     gap: 0;
-    max-width: fit-content;
+    max-width: 100%;
     flex-direction: column;
     border: 1px solid #a3a3a3;
     padding: 1rem;
@@ -106,5 +106,16 @@
     gap: 10px;
     line-height: 1rem;
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px){
+  .enderecoSP {
+    grid-column: span 2;
+    grid-row: 5;
+  }
+  .enderecoRS {
+    grid-column: span 2;
+    grid-row: 6;
   }
 }

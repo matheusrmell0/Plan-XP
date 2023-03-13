@@ -12,7 +12,7 @@ const types: FormTypes = {
   },
 };
 
-const useForm = (type?: string | boolean) => {
+const useForm = (type?: string | boolean | RegExp) => {
   const [value, setValue] = React.useState('');
   const [error, setError] = React.useState<string | null>(null);
 
@@ -25,6 +25,7 @@ const useForm = (type?: string | boolean) => {
       typeof types === 'string' &&
       typeof type === 'string' &&
       types[type] &&
+      types[type].regex instanceof RegExp &&
       !types[type].regex.test(valueChecked)
     ) {
       setError(types[type].message);
