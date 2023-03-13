@@ -40,7 +40,11 @@ const Header = () => {
       <header className={`${styles.header}`}>
         <div className={`${styles.headerLogo}`}>
           <Link to="/">
-            <img src={logo} width="152px" height="74px" alt="" />
+            {!mobile ? (
+              <img src={logo} width="152px" height="80px" alt="" />
+            ) : (
+              <img src={logo} width="120px" height="68px" alt="" />
+            )}
           </Link>
         </div>
 

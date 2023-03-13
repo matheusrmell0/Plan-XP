@@ -12,8 +12,9 @@ export type AppDispatch = typeof store.dispatch;
 import ui from './Reducers/ui';
 
 // Middlewares Import
+import logger from './Middlewares/logger';
 import thunkMiddleware from 'redux-thunk';
-const middleware = new MiddlewareArray().concat(thunkMiddleware);
+const middleware = new MiddlewareArray().concat(thunkMiddleware, logger);
 
 // Reducers
 const rootReducer = combineReducers({});

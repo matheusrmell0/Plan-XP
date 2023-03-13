@@ -5,7 +5,6 @@ import Redes from './Helper/Redes';
 import logo from '../Assets/logo.png';
 import fullup from '../Assets/fullup.png';
 import grupoPlan from '../Assets/grupoPlan.png';
-import Local from '../Assets/components-svg/LocalSvg';
 
 const Contato = () => {
   return (

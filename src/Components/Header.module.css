@@ -56,8 +56,8 @@
 
 .mobileButton {
   border-radius: 50%;
-  width: 85px;
-  height: 85px;
+  width: 75px;
+  height: 75px;
   background: #939598;
   border: 1px solid transparent;
   cursor: pointer;
@@ -68,11 +68,11 @@
 .mobileButton::after {
   content: '';
   display: block;
-  width: 3rem;
+  width: 2.5rem;
   height: 5px;
   background: currentColor;
   border-radius: 2px;
-  box-shadow: 0 14px currentColor, 0 -14px currentColor;
+  box-shadow: 0 12px currentColor, 0 -12px currentColor;
   transition: 0.1s;
 }
 .mobileButton:focus,
@@ -104,7 +104,6 @@
   opacity: 0;
   pointer-events: none;
 }
-
 .navMobileActive {
   pointer-events: initial;
   transition: 0.3s;
@@ -112,7 +111,6 @@
   transform: initial;
   z-index: 100;
 }
-
 .navMobile ul li {
   padding: 1.8rem 0.875rem;
   font-size: 1rem;
@@ -121,11 +119,9 @@
   position: relative;
   cursor: pointer;
 }
-
 .navMobile a:hover {
   color: #a3a3a3;
 }
-
 .navMobile ul li:last-child {
   border: none;
 }
@@ -134,16 +130,21 @@
 
 @media (max-width: 1850px) {
   .header {
-    height: 130vh;
+    height: 126vh;
   }
 }
-@media (max-width: 1020px) {
+
+@media (max-width: 1235px) {
   .header {
     padding: 0.875rem 2rem;
     min-width: auto;
     height: auto;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .nav {
+    margin: 0px;
+    padding: 0;
   }
   .nav ul {
     display: flex;
@@ -161,5 +162,20 @@
   }
   .pageNum {
     font-size: 2.75rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .mobileButton {
+    width: 50px;
+    height: 50px;
+  }
+  .mobileButton::after {
+    width: 1.7rem;
+    height: 3px;
+    box-shadow: 0 8px currentColor, 0 -8px currentColor;
+  }
+  .header {
+    padding: 0.875rem;
   }
 }

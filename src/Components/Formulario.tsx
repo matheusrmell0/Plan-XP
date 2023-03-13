@@ -51,6 +51,7 @@ const Formulario = () => {
     [form],
   );
 
+
   return (
     <form onSubmit={handleSubmit} className={`${styles.form}`}>
       <div className={`${styles.name}`}>

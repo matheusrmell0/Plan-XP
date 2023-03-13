@@ -34,29 +34,29 @@ type FormField = [
 ];
 
 interface Mobile {
-  ui: {mobile: boolean | null}
+  ui: { mobile: boolean | null };
 }
 
 interface FormTypes {
   email: {
-    regex: RegExp | string; 
+    regex: RegExp | string;
     message: string;
   };
   number: {
-    regex: RegExp;
+    regex: RegExp | string;
     message: string;
   };
 }
 
 interface Input {
-  onChange?: ChangeEventHandler<HTMLInputElement> | any;
-  onBlur?: FocusEventHandler<HTMLInputElement> | any;
-  type: string | any;
-  placeholder?: string | any;
-  label: string | any;
-  name: string | any;
-  value?: string | any;
-  error?: string | undefined;
+  onChange?: ChangeEventHandler<HTMLInputElement> | unknown;
+  onBlur?: FocusEventHandler<HTMLInputElement> | unknown;
+  type: string | unknown;
+  placeholder?: string | unknown;
+  label: string | unknown;
+  name: string | unknown;
+  value?: string | unknown;
+  error?: string | unknown;
 }
 
 interface TextArea {

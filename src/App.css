@@ -6,7 +6,9 @@
 :root {
   --color1: #a3a3a3;
   --color2: #f1f1f1;
+  --color3: #292929
 }
+
 body {
   --type-first: 'Montserrat', monospace;
   --type-second: Arial, Helvetica, sans-serif;
@@ -18,7 +20,6 @@ body {
 * {
   box-sizing: border-box;
 }
-
 h1,
 h2,
 h3,
@@ -74,13 +75,13 @@ img {
 /* Classes gerais */
 
 strong {
-  color: #f1f1f1;
+  color: var(--color2);
 }
 
 .page-title {
   font-size: 1rem;
   line-height: 1.625rem;
-  color: #ffffff;
+  color: white;
   font-weight: 400;
   font-family: 'Montserrat';
 }
@@ -102,7 +103,7 @@ strong {
   position: absolute;
   font-size: 116px;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--color3);
   font-weight: 700;
   z-index: -1;
 }
@@ -116,13 +117,12 @@ strong {
   margin-top: 30px;
   font-size: 0.813rem;
   line-height: 1.625rem;
-  color: #ffffff;
+  color: white;
   font-weight: 400;
 }
 
 /* Responsivo  */
-
-@media (max-width: 1170px) {
+@media (max-width: 1255px) {
   .structure {
     display: flex;
     align-items: start;
@@ -136,16 +136,16 @@ strong {
 
 @media (max-width: 1170px) {
   .AppBody {
-    margin: 60px 50px 60px 60px;
+    margin: 100px 50px 60px 60px;
   }
 }
 
-@media (max-width: 1020px){
+@media (max-width: 1235px){
   .structure {
     display: grid;
   }
   .AppBody {
-    margin: 80px 45px 45px 45px;
+    margin: 80px 45px 80px 45px;
   }
 }
 

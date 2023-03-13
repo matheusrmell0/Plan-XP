@@ -1,3 +1,4 @@
+import { never_used } from 'immer/dist/internal';
 import React from 'react';
 
 const types: FormTypes = {
@@ -12,7 +13,7 @@ const types: FormTypes = {
   },
 };
 
-const useForm = (type?: string | boolean | RegExp) => {
+const useForm = (type?: unknown | string) => {
   const [value, setValue] = React.useState('');
   const [error, setError] = React.useState<string | null>(null);
 
@@ -24,11 +25,10 @@ const useForm = (type?: string | boolean | RegExp) => {
     } else if (
       typeof types === 'string' &&
       typeof type === 'string' &&
-      types[type] &&
-      types[type].regex instanceof RegExp &&
-      !types[type].regex.test(valueChecked)
+      types[types[typeof type === 'string' ? type : '']] &&
+      `${!types[type]}.regex.${test(valueChecked)}`
     ) {
-      setError(types[type].message);
+      typeof type === 'string' && setError(types[type]['message']);
       return false;
     } else {
       setError(null);
