@@ -12,6 +12,7 @@ const Input = ({
   error,
 }: Input) => {
   return (
+    <>
     <div className={styles.wrapper}>
       <label className={styles.label} htmlFor={name}>
         {label}
@@ -28,6 +29,7 @@ const Input = ({
       </label>
       {error && <p className={styles.error}>{error}</p>}
     </div>
+    </>
   );
 };
 

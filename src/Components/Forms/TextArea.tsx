@@ -1,4 +1,3 @@
-import { ChangeEventHandler } from 'react';
 import styles from './TextArea.module.css';
 
 const TextArea = ({

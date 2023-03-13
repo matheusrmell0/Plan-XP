@@ -51,12 +51,12 @@ interface FormTypes {
 interface Input {
   onChange?: ChangeEventHandler<HTMLInputElement> | unknown;
   onBlur?: FocusEventHandler<HTMLInputElement> | unknown;
-  type: string | unknown;
-  placeholder?: string | unknown;
-  label: string | unknown;
-  name: string | unknown;
-  value?: string | unknown;
-  error?: string | unknown;
+  type: InputHTMLAttributes<string>;
+  placeholder?: InputHTMLAttributes<string>;
+  label: InputHTMLAttributes<string>;
+  name: InputHTMLAttributes<string>;
+  value?: InputHTMLAttributes<string>;
+  error?: InputHTMLAttributes<string>;
 }
 
 interface TextArea {
