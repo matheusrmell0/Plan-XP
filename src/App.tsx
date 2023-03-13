@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 // Components
 import Header from './Components/Header';
-import Home from './Components/Home';
+import Home from './Components/OqueFazemos';
 import PlanNews from './Components/PlanNews';
 import Contato from './Components/Contato';
 // Pagina 404
