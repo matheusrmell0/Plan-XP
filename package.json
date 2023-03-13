@@ -1,9 +1,9 @@
 {
-  "name": "dados-com-typescript",
+  "name": "plan-xp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://matheusrmell0.github.io/PlanXP",
+  "homepage": "https://matheusrmell0.github.io/ProjetoPlanXP",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
